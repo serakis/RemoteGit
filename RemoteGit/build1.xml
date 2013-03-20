@@ -4,6 +4,10 @@
 	<target name="compile">
 		<javac srcdir="src" destdir="build" />
 	</target>
-	<target name="run">
+	<target name="run" depends="compile">
+		<junit haltonfailure="yes" fork="false">
+			
+		
+		</junit>
 	</target>
 </project>
